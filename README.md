@@ -24,7 +24,7 @@ With UI technology using Material UI and Storybook.</li>
 </ul><ul>
 <li>Reusable component with Storybook</li>
 </ul><h2>Screenshots</h2>
-<hr><p><img src="https://user-images.githubusercontent.com/79769140/216711145-53fd12ed-9ac5-4ae2-876d-89513053249c.png" alt=""></p><p><img src="https://user-images.githubusercontent.com/79769140/216711730-7d5d8b02-e571-45f6-b069-833319e65774.png" alt=""></p><h2>Setup</h2>
+<hr><p><img src="https://user-images.githubusercontent.com/79769140/216711145-53fd12ed-9ac5-4ae2-876d-89513053249c.png" alt=""></p><p><img src="https://user-images.githubusercontent.com/79769140/216711730-7d5d8b02-e571-45f6-b069-833319e65774.png" alt=""></p><p><img src="https://user-images.githubusercontent.com/79769140/216714787-bd37058c-e37c-4789-a037-ca42676db346.jpg" alt=""></p><h2>Setup</h2>
 <hr><p>This project was bootstrapped with Create React App.</p><h5>Steps</h5><ul>
 <li><code>yarn</code> for install all dependencies</li>
 </ul><ul>
