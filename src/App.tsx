@@ -3,6 +3,7 @@ import React from 'react';
 import { CustomButton } from './stories/CustomButton';
 import { DefaultText } from './stories/DefaultText';
 import { TextInput } from './stories/TextInput';
+import { MdLaunch } from "react-icons/md";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <DefaultText
           text="Introducing our"
           size="46px"
+          sizeXs="28px"
           fontFamily="Roboto-Black"
           color="white"
           style={{ textAlign: "center" }}
@@ -26,6 +28,7 @@ function App() {
         <DefaultText
           text="2020 report"
           size="46px"
+          sizeXs="28px"
           fontFamily="Roboto-Black"
           color="white"
           style={{ textAlign: "center" }}
@@ -37,13 +40,17 @@ function App() {
           paddingTop={"20px"}
           paddingBottom={"20px"}
         />
-        <CustomButton label="View Report" type="secondary" />
+        <CustomButton label="View Report" type="secondary">
+          <Box display={"flex"} alignItems="center" pl={"6px"}>
+            <MdLaunch size={18} />
+          </Box>
+        </CustomButton>
       </Box>
       <Box sx={styles.parentRight}>
         <DefaultText
           text="Welcome Back"
           size="46px"
-          sizeXs="32px"
+          sizeXs="28px"
           fontFamily="Roboto-Black"
           color="#2763A4"
         />
@@ -55,8 +62,8 @@ function App() {
           color="#66758A"
         />
         <Box sx={styles.form}>
-          <TextInput type='email' label="Email" sx={{ pb: "30px" }} />
-          <TextInput type='password' label="Password " sx={{ pb: "15px" }} />
+          <TextInput type="email" label="Email" sx={{ pb: "30px" }} />
+          <TextInput type="password" label="Password " sx={{ pb: "15px" }} />
           <DefaultText
             text="Forgot password?"
             size="16px"
@@ -102,8 +109,14 @@ export default App;
 const styles = {
   parent: {
     display: "flex",
-    flexDirection: "row",
-    height: "100vh",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
+    height: {
+      xs: "100vh",
+      md: "100vh",
+    },
   },
   header: {
     paddingX: {
@@ -112,17 +125,11 @@ const styles = {
     },
     position: "absolute",
     top: "25px",
-    color: {
-      xs: "#2763A4",
-      md: "white",
-    },
+    color: "white",
   },
   parentLeft: {
     flex: 1,
-    display: {
-      xs: "none",
-      md: "flex",
-    },
+    display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     backgroundColor: "#2763A4",
@@ -133,21 +140,15 @@ const styles = {
   },
   parentRight: {
     flex: 1,
-    display: {
-      xs: "flex",
-      md: "flex",
-    },
+    display: "flex",
     flexDirection: "column",
-    justifyContent: 'center',
+    justifyContent: "center",
     backgroundColor: "white",
     paddingX: {
       xs: "20px",
       md: "80px",
     },
-    paddingTop: {
-      xs: "20px",
-      md: "0px",
-    },
+    paddingTop: "0px",
   },
   form: {
     boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
@@ -156,10 +157,10 @@ const styles = {
     borderRadius: "10px",
   },
   formBottom: {
-    display: 'flex',
-    flexDirection: 'row',
+    display: "flex",
+    flexDirection: "row",
     paddingTop: "30px",
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  }
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
 };

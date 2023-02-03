@@ -78,5 +78,7 @@ const styles = {
       border: "2px solid #DDDDDD",
       color: "#DDDDDD",
     },
+    display: "flex",
+    alignItems: "center",
   },
 };
